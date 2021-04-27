@@ -96,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   background-color: #0a0a0a;
   min-height: 80px;
+  padding: 8px 15px;
 }
 
 .header__body {
