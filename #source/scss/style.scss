@@ -22,6 +22,7 @@ body {
 	background-color: rgb(10, 10, 10);
 	min-height: 80px;
 	padding: 8px 15px;
+	position: relative;
 
 	&__body {
 		display: flex;
@@ -220,7 +221,6 @@ body {
 	display: none;
 }
 
-/*
 .burger {
 	z-index: 100;
 	margin: 2px 0 0 0;
@@ -228,7 +228,7 @@ body {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 45px;
+	min-width: 45px;
 	height: 45px;
 	background-color: #f8f8f8;
 	text-align: center;
@@ -284,8 +284,17 @@ body {
 .burger {
 	display: none;
 }
-*/
+
 @media (max-width: 1000px) {
+	.header {
+		min-width: 750px;
+	}
+	.budrger {
+		display: block;
+		position: fixed;
+		top: 10px;
+		right: 10px;
+	}
 	.lang {
 		margin-right: 100px;
 	}
@@ -298,12 +307,24 @@ body {
 	.sidebar {
 		padding-top: 90px;
 		z-index: 100;
-		top: 80px;
-		right: 0;
+		top: 130px;
+		right: -30;
 		display: none;
 		position: absolute;
-		background-color: rgba(0, 0, 0, 0.611);
-		height: 100vh;
+		//background-color: rgba(0, 0, 0, 0.611);
+		min-height: 100vh;
+
+		.sidebar-item {
+			background-color: #20b777;
+			color: #fff;
+			a {
+				color: #fff;
+			}
+			li::before {
+				background-color: #fff;
+			}
+		}
+
 		&__item {
 			span {
 				color: #fff;
@@ -315,9 +336,6 @@ body {
 	}
 }
 @media (max-width: 500px) {
-	.header__text-block {
-		display: none;
-	}
 	.text {
 		&__title {
 			font-size: 16vw;
@@ -385,12 +403,19 @@ body {
 	&__link {
 	}
 }
-.sidebar {
-	display: none;
-}
 table,
 th,
 td {
 	border: 1px solid black;
 	padding: 10px 8px;
+}
+
+.content {
+	flex-direction: row-reverse;
+}
+.content-body {
+	padding-left: 30px;
+}
+.sidebar {
+	margin-left: 10px;
 }
