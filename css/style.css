@@ -160,6 +160,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.lang__ru span:hover, .lang__eng span:hover {
+  color: #e9dc24;
+}
+
+.lang__ru span:active, .lang__eng span:active {
+  color: #f2f2f2;
+}
+
 .lang__ru {
   position: relative;
 }

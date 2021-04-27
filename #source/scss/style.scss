@@ -64,12 +64,19 @@ body {
 	width: 100%;
 	justify-content: flex-end;
 	display: flex;
+
 	&__ru,
 	&__eng {
 		margin-left: 15px;
 		font-size: 30px;
 		span {
 			color: #fff;
+			&:hover {
+				color: rgb(233, 220, 36);
+			}
+			&:active {
+				color: rgb(242, 242, 242);
+			}
 		}
 	}
 	&__ru {
