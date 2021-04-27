@@ -1,0 +1,128 @@
+@import "_nullstyle";
+body {
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+	height: 100%;
+}
+
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: rgb(10, 10, 10);
+	min-height: 80px;
+
+	&__body {
+		display: flex;
+		//justify-content: space-between;
+		align-items: center;
+		&:nth-last-child(1) {
+			justify-self: end;
+			color: #000;
+		}
+	}
+
+	&__logo {
+		margin-right: 20px;
+		width: 60px;
+		min-height: 80px;
+		position: relative;
+		img {
+			position: absolute;
+			object-fit: contain;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__text-block {
+		color: #fff;
+	}
+
+	&__title {
+		font-size: 48px;
+	}
+
+	&__subtitle {
+		font-size: 20px;
+	}
+	&__lang {
+	}
+}
+.logo {
+}
+.lang {
+	width: 100%;
+	justify-content: flex-end;
+	display: flex;
+	&__ru,
+	&__eng {
+		margin-left: 15px;
+		font-size: 30px;
+		span {
+			color: #fff;
+		}
+	}
+	&__ru {
+		position: relative;
+	}
+	&__ru::after {
+		position: absolute;
+		top: -15px;
+		right: -8px;
+		content: "";
+		display: block;
+		width: 1px;
+		height: 60px;
+		background-color: #fff;
+	}
+}
+
+.main {
+	padding: 50px 5px;
+}
+.main-body {
+	display: flex;
+}
+.menu {
+	min-width: 400px;
+	list-style: none;
+	padding: 30px 6px;
+	&__item {
+		margin-bottom: 16px;
+		font-size: 28px;
+		span {
+			color: #000;
+		}
+	}
+}
+.text-block {
+}
+.text {
+	&__title {
+		font-size: 70px;
+		font-weight: 600;
+		margin-bottom: 18px;
+	}
+
+	&__content {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+
+	&__list {
+		font-size: 20px;
+		list-style: symbols("-");
+		li {
+			margin-top: 8px;
+		}
+	}
+}
