@@ -188,83 +188,6 @@ body {
   background-color: #fff;
 }
 
-.burger {
-  z-index: 100;
-  margin: 2px 0 0 0;
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 45px;
-  height: 45px;
-  background-color: #f8f8f8;
-  text-align: center;
-  border-radius: 50%;
-}
-
-.burger span {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  display: inline-block;
-  width: 30px;
-  height: 3px;
-  background-color: black;
-  margin: 21px 0 0 0;
-}
-
-.burger:before, .burger:after {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  content: "";
-  display: inline-block;
-  width: 30px;
-  height: 3px;
-  background-color: #090909;
-  position: absolute;
-  right: 7px;
-}
-
-.burger:before {
-  top: 13px;
-}
-
-.burger:after {
-  bottom: 13px;
-}
-
-.burger.active {
-  z-index: 100;
-  background-color: #fff;
-}
-
-.burger.active span {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  opacity: 0;
-}
-
-.burger.active:before, .burger.active:after {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  background-color: #000000;
-}
-
-.burger.active:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: 21px;
-}
-
-.burger.active:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  bottom: 21px;
-}
-
-.burger {
-  display: none;
-}
-
 .main {
   padding: 50px 5px;
 }
@@ -341,33 +264,58 @@ body {
   margin-top: 8px;
 }
 
-.text__table {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 300px auto;
-      grid-template-columns: 300px auto;
-  font-size: 20px;
-  border: 1px solid #000;
+/*
+.text {
+	&__table {
+		display: grid;
+		grid-template-columns: 300px auto;
+		font-size: 20px;
+		border: 1px solid #000;
+	}
 }
-
 .table-item {
-  border: 1px solid #000;
-  padding: 10px 6px;
+	border: 1px solid #000;
+	padding: 10px 6px;
 }
-
 .exp-table {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
-
+.name {
+}
+.exp {
+}
 .exp1 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
+	grid-column: 2/3;
+}
+.exp2 {
+}
+.exp3 {
+}
+.exp4 {
+}
+.exp5 {
+}
+.exp6 {
+}
+.exp7 {
+}
+.exp8 {
+}
+.exp9 {
+}
+.exp10 {
+}
+.exp11 {
+}
+.exp12 {
+}
+.exp13 {
+}
+.exp14 {
 }
 
+*/
 .menu-title {
   font-size: 40px;
   margin-left: 0;
@@ -376,19 +324,86 @@ body {
           flex: 1 0 auto;
 }
 
-@media (max-width: 768px) {
-  .burger {
-    display: block;
-    top: 28px;
-    right: 12px;
-  }
+.burger {
+  display: none;
+}
+
+/*
+.burger {
+	z-index: 100;
+	margin: 2px 0 0 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 45px;
+	background-color: #f8f8f8;
+	text-align: center;
+	border-radius: 50%;
+	span {
+		transition: 0.4s;
+		display: inline-block;
+		width: 30px;
+		height: 3px;
+		background-color: rgb(0, 0, 0);
+		margin: 21px 0 0 0;
+	}
+	&:before,
+	&:after {
+		transition: 0.4s;
+		content: "";
+		display: inline-block;
+		width: 30px;
+		height: 3px;
+		background-color: rgb(9, 9, 9);
+		position: absolute;
+		right: 7px;
+	}
+	&:before {
+		top: 13px;
+	}
+	&:after {
+		bottom: 13px;
+	}
+}
+.burger.active {
+	z-index: 100;
+	background-color: #fff;
+	& span {
+		transition: 0.4s;
+		opacity: 0;
+	}
+	&:before,
+	&:after {
+		transition: 0.4s;
+		background-color: #000000;
+	}
+	&:before {
+		transform: rotate(45deg);
+		top: 21px;
+	}
+	&:after {
+		transform: rotate(-45deg);
+		bottom: 21px;
+	}
+}
+
+.burger {
+	display: none;
+}
+*/
+@media (max-width: 1000px) {
   .lang {
     margin-right: 100px;
+  }
+  .logo {
+    max-width: 100px;
   }
   .menu-title {
     color: #fff;
   }
-  .menu {
+  .sidebar {
     padding-top: 90px;
     z-index: 100;
     top: 80px;
@@ -398,10 +413,10 @@ body {
     background-color: rgba(0, 0, 0, 0.611);
     height: 100vh;
   }
-  .menu__item span {
+  .sidebar__item span {
     color: #fff;
   }
-  .menu.active {
+  .sidebar.active {
     display: block;
   }
 }
@@ -420,6 +435,7 @@ body {
   background-color: #000;
   color: #fff;
   padding: 20px 15px;
+  min-width: 100vw;
 }
 
 .footer__body {
@@ -471,4 +487,14 @@ body {
   right: -8px;
   top: -6px;
   background-color: #fff;
+}
+
+.sidebar {
+  display: none;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
 }
