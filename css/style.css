@@ -285,6 +285,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
 }
 
+.menu__item span:hover {
+  color: #484646;
+}
+
+.menu__item span:active {
+  color: black;
+}
+
 .text__title {
   font-size: 70px;
   font-weight: 600;
@@ -334,4 +342,45 @@ h1, h2, h3, h4, h5, h6 {
   .header__text-block {
     display: none;
   }
+}
+
+.footer {
+  min-height: 80px;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 15px;
+}
+
+.footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__copyright {
+  margin-bottom: 20px;
+}
+
+.footer__links {
+  text-align: center;
+}
+
+.footer__links a {
+  position: relative;
+  margin-right: 12px;
+}
+
+.footer__links a:nth-last-child(1)::after {
+  display: none;
+}
+
+.footer__links a::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 28px;
+  position: absolute;
+  right: -8px;
+  top: -6px;
+  background-color: #fff;
 }

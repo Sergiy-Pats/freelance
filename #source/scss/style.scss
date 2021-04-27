@@ -173,6 +173,12 @@ body {
 		font-size: 28px;
 		span {
 			color: #000;
+			&:hover {
+				color: rgb(72, 70, 70);
+			}
+			&:active {
+				color: rgb(0, 0, 0);
+			}
 		}
 	}
 }
@@ -227,5 +233,54 @@ body {
 @media (max-width: 500px) {
 	.header__text-block {
 		display: none;
+	}
+}
+
+.footer {
+	min-height: 80px;
+	background-color: #000;
+	color: #fff;
+	padding: 20px 15px;
+	&__body {
+		display: flex;
+	}
+
+	&__left {
+	}
+
+	&__copyright {
+		margin-bottom: 20px;
+	}
+
+	&__links {
+		text-align: center;
+		a {
+			position: relative;
+			margin-right: 12px;
+			&:nth-last-child(1) {
+				&::after {
+					display: none;
+				}
+			}
+			&::after {
+				content: "";
+				display: block;
+				width: 1px;
+				height: 28px;
+				position: absolute;
+				right: -8px;
+				top: -6px;
+				background-color: #fff;
+			}
+		}
+	}
+
+	&__right {
+	}
+}
+.container {
+}
+.links-footer {
+	&__link {
 	}
 }
