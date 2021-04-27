@@ -550,6 +550,7 @@ td {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  padding-top: 100px;
 }
 
 .content-body {

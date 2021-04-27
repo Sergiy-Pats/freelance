@@ -39,6 +39,7 @@ body {
 		width: 60px;
 		min-height: 80px;
 		position: relative;
+
 		img {
 			position: absolute;
 			object-fit: contain;
@@ -437,6 +438,7 @@ td {
 
 .content {
 	flex-direction: row-reverse;
+	padding-top: 100px;
 }
 .content-body {
 	padding-left: 30px;
