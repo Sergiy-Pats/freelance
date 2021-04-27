@@ -289,7 +289,8 @@ body {
 	.header {
 		min-width: 750px;
 	}
-	.budrger {
+
+	.burger {
 		display: block;
 		position: fixed;
 		top: 10px;
@@ -304,13 +305,17 @@ body {
 	.menu-title {
 		color: #fff;
 	}
+	body.active {
+		overflow: hidden;
+	}
 	.sidebar {
+		overflow: auto;
 		padding-top: 90px;
-		z-index: 100;
-		top: 130px;
-		right: -30;
+		z-index: 98;
+		top: 0px;
+		right: 0px;
 		display: none;
-		position: absolute;
+		position: fixed;
 		//background-color: rgba(0, 0, 0, 0.611);
 		min-height: 100vh;
 
@@ -319,6 +324,7 @@ body {
 			color: #fff;
 			a {
 				color: #fff;
+				font-size: 7vw;
 			}
 			li::before {
 				background-color: #fff;
@@ -418,4 +424,14 @@ td {
 }
 .sidebar {
 	margin-left: 10px;
+}
+@media (max-width: 1000px) {
+	.footer {
+		min-width: 750px;
+	}
+}
+@media (max-width: 751px) {
+	.sidebar {
+		min-width: 690px;
+	}
 }
