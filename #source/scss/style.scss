@@ -12,8 +12,9 @@ body {
 }
 
 .container {
-	max-width: 1600px;
+	max-width: 1630px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .header {
@@ -193,11 +194,11 @@ body {
 
 	&__content {
 		font-size: 24px;
-		margin-bottom: 10px;
+		margin-bottom: 40px;
 	}
 
 	&__list {
-		font-size: 20px;
+		font-size: 24px;
 		list-style: square;
 		li {
 			margin-top: 8px;
@@ -233,6 +234,11 @@ body {
 @media (max-width: 500px) {
 	.header__text-block {
 		display: none;
+	}
+	.text {
+		&__title {
+			font-size: 16vw;
+		}
 	}
 }
 
