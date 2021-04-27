@@ -168,7 +168,7 @@ body {
 	justify-content: space-between;
 }
 .menu {
-	min-width: 260px;
+	max-width: 320px;
 	padding: 30px 6px;
 	margin-left: 18px;
 	&__item {
@@ -186,6 +186,7 @@ body {
 	}
 }
 .text-block {
+	margin-left: 50px;
 }
 .text {
 	&__title {
@@ -219,9 +220,54 @@ body {
 		}
 	}
 }
+.text {
+	&__table {
+		display: grid;
+		grid-template-columns: 300px auto;
+		font-size: 20px;
+		border: 1px solid #000;
+	}
+}
+.table-item {
+	border: 1px solid #000;
+}
+.name {
+}
+.exp {
+}
+.exp1 {
+}
+.exp2 {
+}
+.exp3 {
+}
+.exp4 {
+}
+.exp5 {
+}
+.exp6 {
+}
+.exp7 {
+}
+.exp8 {
+}
+.exp9 {
+}
+.exp10 {
+}
+.exp11 {
+}
+.exp12 {
+}
+.exp13 {
+}
+.exp14 {
+}
 
 .menu-title {
-	font-size: 50px;
+	font-size: 40px;
+	margin-left: 0;
+	flex: 1 0 auto;
 }
 @media (max-width: 768px) {
 	.burger {
@@ -232,12 +278,17 @@ body {
 	.lang {
 		margin-right: 100px;
 	}
+	.menu-title {
+		color: #fff;
+	}
 	.menu {
+		padding-top: 90px;
+		z-index: 100;
 		top: 80px;
 		right: 0;
 		display: none;
 		position: absolute;
-		background-color: rgba(0, 0, 0, 0.33);
+		background-color: rgba(0, 0, 0, 0.611);
 		height: 100vh;
 		&__item {
 			span {
