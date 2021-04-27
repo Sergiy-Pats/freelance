@@ -94,6 +94,78 @@ body {
 	}
 }
 
+.burger {
+	z-index: 100;
+	margin: 2px 0 0 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 45px;
+	background-color: #f8f8f8;
+	text-align: center;
+	border-radius: 50%;
+	span {
+		transition: 0.4s;
+		display: inline-block;
+		width: 30px;
+		height: 3px;
+		background-color: rgb(0, 0, 0);
+		margin: 21px 0 0 0;
+	}
+	&:before,
+	&:after {
+		transition: 0.4s;
+		content: "";
+		display: inline-block;
+		width: 30px;
+		height: 3px;
+		background-color: rgb(9, 9, 9);
+		position: absolute;
+		right: 7px;
+	}
+	&:before {
+		top: 13px;
+	}
+	&:after {
+		bottom: 13px;
+	}
+}
+.burger.active {
+	z-index: 100;
+	background-color: #fff;
+	& span {
+		transition: 0.4s;
+		opacity: 0;
+	}
+	&:before,
+	&:after {
+		transition: 0.4s;
+		background-color: #000000;
+	}
+	&:before {
+		transform: rotate(45deg);
+		top: 21px;
+	}
+	&:after {
+		transform: rotate(-45deg);
+		bottom: 21px;
+	}
+}
+
+.burger {
+	//display: none;
+}
+@media (max-width: 768px) {
+	.burger {
+		display: block;
+		top: 28px;
+	}
+	.lang {
+		margin-right: 100px;
+	}
+}
 .main {
 	padding: 50px 5px;
 }
