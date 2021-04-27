@@ -289,10 +289,12 @@ body {
 	.header {
 		min-width: 750px;
 	}
+	.content {
+		display: block;
+	}
 
 	.burger {
 		display: block;
-		position: fixed;
 		top: 10px;
 		right: 10px;
 	}
@@ -306,20 +308,25 @@ body {
 		color: #fff;
 	}
 	body.active {
-		overflow: hidden;
+		//overflow: hidden;
 	}
 	.sidebar {
 		overflow: auto;
 		padding-top: 90px;
 		z-index: 98;
-		top: 0px;
-		right: 0px;
+		top: 130px;
+		left: 20px;
 		display: none;
-		position: fixed;
+		position: absolute;
 		//background-color: rgba(0, 0, 0, 0.611);
-		min-height: 100vh;
+		height: 500px;
+		border: 3px solid #000;
+		padding-bottom: -20px;
 
 		.sidebar-item {
+			&__title {
+				font-size: 30px;
+			}
 			background-color: #20b777;
 			color: #fff;
 			a {
@@ -345,6 +352,18 @@ body {
 	.text {
 		&__title {
 			font-size: 16vw;
+		}
+	}
+	.sidebar-item {
+		min-height: 100vh;
+		background-color: #20b777;
+		color: #fff;
+		a {
+			color: #fff;
+			font-size: 60px;
+		}
+		li::before {
+			background-color: #fff;
 		}
 	}
 }
