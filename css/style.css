@@ -273,10 +273,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu {
-  min-width: 400px;
+  min-width: 260px;
   padding: 30px 6px;
   margin-left: 18px;
 }
