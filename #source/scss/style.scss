@@ -231,11 +231,16 @@ body {
 .table-item {
 	border: 1px solid #000;
 }
+.exp-table {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
 .name {
 }
 .exp {
 }
 .exp1 {
+	grid-column: 2/3;
 }
 .exp2 {
 }

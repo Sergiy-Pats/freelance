@@ -353,6 +353,19 @@ body {
   border: 1px solid #000;
 }
 
+.exp-table {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.exp1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
 .menu-title {
   font-size: 40px;
   margin-left: 0;
