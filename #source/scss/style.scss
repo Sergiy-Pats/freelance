@@ -252,10 +252,12 @@ body {
 	}
 
 	&__left {
+		width: 100%;
 	}
 
 	&__copyright {
 		margin-bottom: 20px;
+		text-align: center;
 	}
 
 	&__links {
