@@ -157,15 +157,7 @@ body {
 .burger {
 	//display: none;
 }
-@media (max-width: 768px) {
-	.burger {
-		display: block;
-		top: 28px;
-	}
-	.lang {
-		margin-right: 100px;
-	}
-}
+
 .main {
 	padding: 50px 5px;
 }
@@ -204,5 +196,36 @@ body {
 		li {
 			margin-top: 8px;
 		}
+	}
+}
+@media (max-width: 768px) {
+	.burger {
+		display: block;
+		top: 28px;
+		right: 12px;
+	}
+	.lang {
+		margin-right: 100px;
+	}
+	.menu {
+		top: 80px;
+		right: 0;
+		display: none;
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.33);
+		height: 100vh;
+		&__item {
+			span {
+				color: #fff;
+			}
+		}
+	}
+	.menu.active {
+		display: block;
+	}
+}
+@media (max-width: 500px) {
+	.header__text-block {
+		display: none;
 	}
 }
